@@ -1,0 +1,136 @@
+@media (min-width: 768px) {
+  .hero {
+    max-width: 70%;
+    margin: 40px auto;
+  }
+  main {
+    .features {
+      margin-top: 40px;
+      .container {
+        padding: 100px 0;
+        gap: 85px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      img.bg {
+        top: -288px;
+      }
+    }
+    .testimoni {
+      .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .card {
+          flex-basis: 300px;
+        }
+      }
+    }
+    aside {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .header {
+    .navbar {
+      max-width: 85%;
+      margin: 74px auto;
+      &__brand img {
+        transform: scale(1.5);
+      }
+
+      .nav-link {
+        margin-left: 60px;
+      }
+    }
+
+    .hero {
+      max-width: 55%;
+      margin: 80px auto;
+
+      .cta {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  main {
+    .features {
+      margin: 240px 0 150px;
+      .container {
+        max-width: 60%;
+        padding: 0;
+      }
+      img.bg {
+        top: -541px;
+      }
+    }
+    .productive {
+      .container {
+        max-width: 80%;
+        display: flex;
+        gap: 80px;
+        align-items: center;
+        img {
+          flex-basis: 50%;
+        }
+      }
+    }
+    .testimoni {
+      .container {
+        background-size: 40px;
+        background-position: 70px 20px;
+        justify-content: center;
+        gap: 0 50px;
+
+        .card {
+          flex-basis: 350px;
+        }
+      }
+    }
+  }
+
+  main aside .subscribe {
+    width: 800px;
+    input {
+      width: 60%;
+      margin-right: 20px;
+    }
+    .cta {
+      width: 30%;
+    }
+  }
+
+  .footer {
+    &__brand {
+      margin-left: 80px;
+    }
+    .container {
+      flex-direction: row;
+      max-width: 100%;
+      padding: 0 100px;
+
+      .footer__address {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 50px;
+      }
+      .footer__nav {
+        margin-left: 100px;
+        width: 25%;
+        ul {
+          display: flex;
+          gap: 80px;
+        }
+      }
+      .footer__social {
+        width: 150px;
+        margin: 0;
+      }
+    }
+  }
+}

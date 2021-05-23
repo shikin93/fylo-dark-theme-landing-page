@@ -1,0 +1,143 @@
+main {
+  background-color: $mainBg;
+  position: relative;
+
+  .features {
+    text-align: center;
+    margin-top: -281px;
+    position: relative;
+
+    .container {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 400px 0 100px;
+      display: grid;
+      gap: 85px 0;
+      align-items: center;
+    }
+
+    img.bg {
+      position: absolute;
+      z-index: -1;
+      top: -141px;
+      left: 0;
+      width: 100%;
+    }
+
+    .feature {
+      img {
+        width: auto;
+        height: 60px;
+      }
+      h2 {
+        padding: 20px 0 10px;
+      }
+    }
+  }
+
+  .productive {
+    .container {
+      max-width: 80%;
+      margin: 40px auto;
+      h3 {
+        padding-top: 40px;
+        font-size: calc(2vw + 0.7em);
+      }
+      p {
+        padding: 10px 0;
+      }
+      a {
+        display: inline-block;
+        border-bottom: 2px solid $cyan;
+        color: $cyan;
+        padding-bottom: 5px;
+        margin-top: 20px;
+
+        &:active {
+          color: $white;
+          border-bottom: 2px solid $white;
+
+          svg use {
+            fill: $white;
+          }
+        }
+
+        span {
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+
+  .testimoni {
+    max-width: 90%;
+    margin: 150px auto 0;
+    padding-bottom: 300px;
+    font-size: 12px;
+
+    .container {
+      background: url(../images/bg-quotes.png) no-repeat 30px 30px;
+      background-size: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 50px 20px;
+
+      .card {
+        background-color: $testimoniBg;
+        border-radius: 5px;
+        padding: 20px 15px;
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-top: 20px;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+          p.name {
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    padding: 0 20px;
+    position: absolute;
+    bottom: -170px;
+
+    .subscribe {
+      text-align: center;
+      background-color: $darkBlue;
+      margin: 0 auto;
+      padding: 30px 25px;
+      border-radius: 5px;
+      h3 {
+        font-size: calc(2vw + 0.7em);
+      }
+      p {
+        margin: 20px 0;
+      }
+      input {
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        border-radius: 50px;
+      }
+      .cta {
+        width: 100%;
+        @include btn(15px, 20px 0);
+
+        &:active {
+          @include btnActive();
+        }
+      }
+    }
+  }
+}

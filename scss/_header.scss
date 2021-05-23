@@ -1,0 +1,49 @@
+.header {
+  .navbar {
+    max-width: 90%;
+    margin: 24px auto;
+    display: flex;
+    justify-content: space-between;
+    &__brand {
+      img {
+        width: calc(6vw + 5em);
+      }
+    }
+    &__nav {
+      .nav-link {
+        margin-left: 20px;
+        &:hover {
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .hero {
+    max-width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    z-index: 99;
+
+    h1 {
+      padding-top: 40px;
+      font-size: calc(2vw + 1em);
+    }
+    p {
+      padding: 20px 0;
+      font-size: calc(1vw + 10px);
+    }
+    .cta {
+      @include btn(15px 80px, 20px 0);
+
+      &:active {
+        @include btnActive();
+      }
+    }
+  }
+}

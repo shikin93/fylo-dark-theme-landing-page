@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #1c2431;
+  color: white;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+button,
+header {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer .attribution a {
+  color: turquoise;
+}
+
+.header .navbar {
+  max-width: 90%;
+  margin: 24px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar__brand img {
+  width: calc(6vw + 5em);
+}
+
+.header .navbar__nav .nav-link {
+  margin-left: 20px;
+}
+
+.header .navbar__nav .nav-link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.header .navbar__nav a {
+  color: white;
+}
+
+.header .hero {
+  max-width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  z-index: 99;
+}
+
+.header .hero h1 {
+  padding-top: 40px;
+  font-size: calc(2vw + 1em);
+}
+
+.header .hero p {
+  padding: 20px 0;
+  font-size: calc(1vw + 10px);
+}
+
+.header .hero .cta {
+  padding: 15px 80px;
+  margin: 20px 0;
+  border: 0;
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9, #339ecc);
+  -webkit-box-shadow: 0 -1px 5px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 -1px 5px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header .hero .cta:active {
+  background: #65e2d9;
+}
+
+main {
+  background-color: #181f2a;
+  position: relative;
+}
+
+main .features {
+  text-align: center;
+  margin-top: -281px;
+  position: relative;
+}
+
+main .features .container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 400px 0 100px;
+  display: -ms-grid;
+  display: grid;
+  gap: 85px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .features img.bg {
+  position: absolute;
+  z-index: -1;
+  top: -141px;
+  left: 0;
+  width: 100%;
+}
+
+main .features .feature img {
+  width: auto;
+  height: 60px;
+}
+
+main .features .feature h2 {
+  padding: 20px 0 10px;
+}
+
+main .productive .container {
+  max-width: 80%;
+  margin: 40px auto;
+}
+
+main .productive .container h3 {
+  padding-top: 40px;
+  font-size: calc(2vw + 0.7em);
+}
+
+main .productive .container p {
+  padding: 10px 0;
+}
+
+main .productive .container a {
+  display: inline-block;
+  border-bottom: 2px solid #65e2d9;
+  color: #65e2d9;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+main .productive .container a:active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+main .productive .container a:active svg use {
+  fill: white;
+}
+
+main .productive .container a span {
+  position: relative;
+  top: 3px;
+}
+
+main .testimoni {
+  max-width: 90%;
+  margin: 150px auto 0;
+  padding-bottom: 300px;
+  font-size: 12px;
+}
+
+main .testimoni .container {
+  background: url(../images/bg-quotes.png) no-repeat 30px 30px;
+  background-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+main .testimoni .container .card {
+  background-color: #202a3c;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+
+main .testimoni .container .card .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+main .testimoni .container .card .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main .testimoni .container .card .user p.name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main aside {
+  padding: 0 20px;
+  position: absolute;
+  bottom: -170px;
+}
+
+main aside .subscribe {
+  text-align: center;
+  background-color: #1c2431;
+  margin: 0 auto;
+  padding: 30px 25px;
+  border-radius: 5px;
+}
+
+main aside .subscribe h3 {
+  font-size: calc(2vw + 0.7em);
+}
+
+main aside .subscribe p {
+  margin: 20px 0;
+}
+
+main aside .subscribe input {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 50px;
+}
+
+main aside .subscribe .cta {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: 0;
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9, #339ecc);
+  -webkit-box-shadow: 0 -1px 5px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 -1px 5px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main aside .subscribe .cta:active {
+  background: #65e2d9;
+}
+
+.footer {
+  background-color: #0b1523;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.footer__brand {
+  width: calc(50vw);
+  padding: 250px 0 20px 20px;
+}
+
+.footer__address .location,
+.footer__address .phone,
+.footer__address .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.footer__address .location svg,
+.footer__address .phone svg,
+.footer__address .email svg {
+  width: 20px;
+  height: auto;
+}
+
+.footer__nav ul li {
+  margin-bottom: 20px;
+}
+
+.footer__nav--1 {
+  margin-bottom: 50px;
+}
+
+.footer__nav a:active {
+  font-weight: bold;
+}
+
+.footer__social {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.footer__social i {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__social span {
+  border: 1px solid white;
+  padding: 2px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    max-width: 70%;
+    margin: 40px auto;
+  }
+  main .features {
+    margin-top: 40px;
+  }
+  main .features .container {
+    padding: 100px 0;
+    gap: 85px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main .features img.bg {
+    top: -288px;
+  }
+  main .testimoni .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .testimoni .container .card {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+  }
+  main aside {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 991px) {
+  .header .navbar {
+    max-width: 85%;
+    margin: 74px auto;
+  }
+  .header .navbar__brand img {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .header .navbar .nav-link {
+    margin-left: 60px;
+  }
+  .header .hero {
+    max-width: 55%;
+    margin: 80px auto;
+  }
+  .header .hero .cta {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  main .features {
+    margin: 240px 0 150px;
+  }
+  main .features .container {
+    max-width: 60%;
+    padding: 0;
+  }
+  main .features img.bg {
+    top: -541px;
+  }
+  main .productive .container {
+    max-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .productive .container img {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  main .testimoni .container {
+    background-size: 40px;
+    background-position: 70px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0 50px;
+  }
+  main .testimoni .container .card {
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+  }
+  main aside .subscribe {
+    width: 800px;
+  }
+  main aside .subscribe input {
+    width: 60%;
+    margin-right: 20px;
+  }
+  main aside .subscribe .cta {
+    width: 30%;
+  }
+  .footer__brand {
+    margin-left: 80px;
+  }
+  .footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+    padding: 0 100px;
+  }
+  .footer .container .footer__address {
+    width: 60%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+    gap: 50px;
+  }
+  .footer .container .footer__nav {
+    margin-left: 100px;
+    width: 25%;
+  }
+  .footer .container .footer__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 80px;
+  }
+  .footer .container .footer__social {
+    width: 150px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
