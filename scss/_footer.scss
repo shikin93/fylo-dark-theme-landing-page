@@ -50,9 +50,10 @@
       width: 20px;
       height: 20px;
     }
-    span {
+    div {
+      display: inline-block;
       border: 1px solid $white;
-      padding: 2px;
+      padding: 2px 4px;
       border-radius: 50%;
       margin-left: 10px;
     }

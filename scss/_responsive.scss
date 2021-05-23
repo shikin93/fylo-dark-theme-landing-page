@@ -115,17 +115,14 @@
 
       .footer__address {
         width: 60%;
-        display: grid;
-        grid-template-columns: 1fr auto;
+        display: flex;
         gap: 50px;
       }
       .footer__nav {
         margin-left: 100px;
         width: 25%;
-        ul {
-          display: flex;
-          gap: 80px;
-        }
+        display: flex;
+        gap: 80px;
       }
       .footer__social {
         width: 150px;

@@ -39,7 +39,11 @@
       </nav>
 
       <section class="hero">
-        <img src="./images/illustration-intro.png" alt="" class="hero__image" />
+        <img
+          src="./images/illustration-intro.png"
+          alt="intro"
+          class="hero__image"
+        />
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
           Fylo stores all your most important files in one secure location.
@@ -52,47 +56,47 @@
 
     <main>
       <section class="features">
-        <img src="./images/bg-curvy-mobile.svg" alt="" class="bg" />
+        <img src="./images/bg-curvy-mobile.svg" alt="mobile" class="bg" />
         <div class="container">
-          <article class="feature">
+          <div class="feature">
             <img src="./images/icon-access-anywhere.svg" alt="" />
             <h2>Access your files, anywhere</h2>
             <p>
               The ability to use a smartphone, tablet, or computer to access
               your account means your files follow you everywhere.
             </p>
-          </article>
-          <article class="feature">
-            <img src="./images/icon-security.svg" alt="" />
+          </div>
+          <div class="feature">
+            <img src="./images/icon-security.svg" alt="security" />
             <h2>Security you can trust</h2>
             <p>
               2-factor authentication and user-controlled encryption are just a
               couple of the security features we allow to help secure your
               files.
             </p>
-          </article>
-          <article class="feature">
-            <img src="./images/icon-collaboration.svg" alt="" />
+          </div>
+          <div class="feature">
+            <img src="./images/icon-collaboration.svg" alt="collaboration" />
             <h2>Real-time collaboration</h2>
             <p>
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
-          </article>
-          <article class="feature">
-            <img src="./images/icon-any-file.svg" alt="" />
+          </div>
+          <div class="feature">
+            <img src="./images/icon-any-file.svg" alt="file" />
             <h2>Store any type of file</h2>
             <p>
               Whether you're sharing holidays photos or work documents, Fylo has
               you covered allowing for all file types to be securely stored and
               shared.
             </p>
-          </article>
+          </div>
         </div>
       </section>
 
       <section class="productive">
-        <article class="container">
+        <div class="container">
           <img src="./images/illustration-stay-productive.png" alt="" />
           <div class="productive__article">
             <h3>Stay productive, wherever you are</h3>
@@ -147,10 +151,10 @@
                   </g></svg></span
             ></a>
           </div>
-        </article>
+        </div>
       </section>
       <section class="testimoni">
-        <article class="container">
+        <div class="container">
           <div class="card">
             <p>
               Fylo has improved our team productivity by an order of magnitude.
@@ -199,7 +203,7 @@
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </section>
       <aside>
         <article class="subscribe">
@@ -209,9 +213,13 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <label for="email" id="email"
-            ><input type="email" placeholder="email@example.com" required
-          /></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
           <input type="submit" class="cta" value="Get Started For Free" />
         </article>
       </aside>
@@ -263,30 +271,32 @@
           </div>
         </div>
         <nav class="footer__nav">
-          <ul>
-            <div class="footer__nav--1">
+          <div class="footer__nav--1">
+            <ul>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Jobs</a></li>
               <li><a href="#">Press</a></li>
               <li><a href="#">Blog</a></li>
-            </div>
-            <div class="footer__nav--2">
+            </ul>
+          </div>
+          <div class="footer__nav--2">
+            <ul>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Privacy</a></li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </nav>
         <div class="footer__social">
-          <span
-            ><a href="#" id="facebook"><i class="fab fa-facebook-f"></i></a
-          ></span>
-          <span
-            ><a href="#" id="twitter"><i class="fab fa-twitter"></i></a
-          ></span>
-          <span
-            ><a href="#" id="instagram"><i class="fab fa-instagram"></i></a
-          ></span>
+          <div class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="instagram">
+            <i class="fab fa-instagram"></i>
+          </div>
         </div>
       </div>
 
